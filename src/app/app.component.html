@@ -1,4 +1,14 @@
 <h1 style="background-color: aquamarine;"> App Component</h1>
 <app-login> </app-login>
 <app-profile style="background-color: brown;">   </app-profile>
-<button (click)="apple()"> Call me </button>
+<!-- <button (click)="apple()"> Call me </button>
+<button (click)="tomato()"> Second Call </button>
+<button (click)="sum(10,20)"> Addition Button </button> -->
+<div style="text-align: center;"> 
+    <h2 class ="count"> {{count}} </h2>
+</div>
+<div>
+    <button (click)= "handleCounter('plus')" class="btn bg-red"> Increment </button>
+    <button (click)="handleCounter('reset')" class="btn bg-black"> Reset</button>
+    <button (click)= "handleCounter('minus')"class="btn bg-green"> Decrement</button>
+</div>
